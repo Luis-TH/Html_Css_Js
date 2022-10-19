@@ -1,34 +1,34 @@
-@font-face {
-    font-family: MonserratFuenteCustom;
-    src: url(./fonts/Montserrat/Montserrat-Regular.ttf);
+@font-face { /* Mando llamar esta Fuente */
+    font-family: MonserratFuenteCustom; /* Nombre de la Fuente */
+    src: url(./fonts/Montserrat/Montserrat-Regular.ttf); /* Link de la fuente */
 }
 
-h1 {
+h1 { /* Estilos para el Titulo */
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: 'Mansalva', cursive;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: 45px;
+    font-family: 'Mansalva', cursive; /* Fuente que se va a utilizar */
+    font-style: italic; /* Estilo Cursiva */
+    text-transform: uppercase; /* Que este en Mayuscula */
+    font-size: 45px; /* Tamaño de la fuente */
     /* Colores */
     /* Colores del sistema */
-    color: mediumpurple;
+    color: mediumpurple; /* Color de la fuente */
     /* Colores hexadecimales */
-    color: #6753ca99;
+    color: #6753ca99; /* Mismo color en Hexagesimal */
     /* Colores RGB */
     color: rgb(255, 255, 107);
     /* Colores RGBA */
-    color: rgba(90, 77, 120, 0.8);
+    color: rgba(90, 77, 120, 0.8); /* Mismo color en RGBA */
 }
 
-h3 {
-    font-family: MonserratFuenteCustom, Comic Sans MS;
-    font-size: 35px;
-    font-weight: lighter;
-    color: olive;
+h3 { /* Estilos en el Subtitulo */
+    font-family: MonserratFuenteCustom, Comic Sans MS; /* Tipo de Fuente */
+    font-size: 35px; /* Tamaño de la Fuente */
+    font-weight: lighter; /* Que el estilo de las letras sea delgado */
+    color: olive; /* Color del texto */
 }
 
-p {
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+p { /* Estilos en el Parrafo */
+    font-family: sans-serif; /* Tipo de Fuente */
+    font-size: 18px; /* Tamaño del Texto */
+    font-weight: bold; /* Que este en Negritas */
 }

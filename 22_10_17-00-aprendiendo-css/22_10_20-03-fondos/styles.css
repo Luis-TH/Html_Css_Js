@@ -1,36 +1,36 @@
 body {
-    /* background-color: #ccc;
-    background-image: url(./img/img1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-position: right bottom; */
-    color: black;
-    text-align: justify;
-    text-indent: 15px;
-    /* word-spacing: 10px;
-    letter-spacing: 5px; */
+    background-color: #ccc; /* Fondo de pantalla un poquito gris */
+    background-image: url(./img/img1.jpg); /* Una imagen de fondo de pantalla */
+    background-repeat: no-repeat; /* Que no se repita la imagen */
+    background-size: 100% 100%; /* Que la imagen de fondo abarque el 100 width y 100% del tamaño del texto */
+    background-attachment: fixed; /* Que abarque el 100% de la pantalla del diaplay y este fija */
+    background-position: right bottom; /* Posicion de la imagen de fondo de pantalla mas a la derecha y mas abajo */
+    color: black; /* Texto color negro */
+    text-align: justify; /* Texto justificado */
+    text-indent: 15px; /* Es donde empieza el texto, la identacion */
+    word-spacing: 10px; /* Espacio entre cada palabra */
+    letter-spacing: 5px; /* Separacion entre cada letra */
 }
 
 #caja {
-    border: 5px solid black;
-    padding: 10px;
-    background-color: rgb(94, 131, 212);
-    color: white;
-    font-family: "Open Sans";
-    text-align: center;
-    line-height: 50px;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-decoration: line-through;
-    vertical-align: top;
+    border: 5px solid black; /* Hice caja donde va el texto, osea le di margenes */
+    padding: 10px; /* Le di un padding al texto */
+    background-color: rgb(94, 131, 212); /* Fondo de pantalla de la caja azul */
+    color: white; /* Color del texto blanco */
+    font-family: "Open Sans"; /* Fuente del texto */
+    text-align: center; /* Texto centrado */
+    line-height: 50px; /* Tamaño de espacio entre cada linea de texto */
+    text-transform: uppercase; /* Que el texto este en mayusculas */
+    text-decoration: underline; /* El titulo esta subrayado */
+    text-decoration: line-through; /* Que el texto este rayado con una linea */
+    vertical-align: top; /* Que la alineacion sea superior */
 }
 
 h2 {
-    color: red;
-    background: white;
-    background-image: url(./img/img2.jpg);
-    border: 5px solid red;
-    text-align: justify;
-    height: 300px;
+    color: red; /* El subtitulo menor esta en rojo */
+    background: white; /* El subtitulo, tiene un fondo color blanco */
+    background-image: url(./img/img2.jpg); /* Tiene una imagen de fondo */
+    border: 5px solid red; /* Le puse una linea para siular una caja */
+    text-align: justify; /* El texto esta justificado, osea los espacios, del dubtitulo menor */
+    height: 300px; /* Mas grande el tamaño del fondo de pantalla, mas largo */
 }

@@ -1,0 +1,107 @@
+/* 
+### SELECTORES ###
+*/
+
+/* Selector universal */
+
+* { /* Para todo el documento, va este estilo de letra */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Para definir estilo de letra en todo el documento */
+}
+
+/* Selectores de etiqueta */
+
+h1 { /* Es el titulo y se aplica a todos */
+    background: red; /* Lo mandamos ALV con el important de abajo */
+    color: white; /* Color de letra que va a llevar  */
+    padding: 10px; /* Tamaño hacia afuera del elemento */
+}
+
+a { /* A los hypervinculos */
+    font-size: 18px; /* Tamaño del texto */
+    color: green; /* Que sea color verde,  */
+    text-decoration: none; /* Para quitarle el subrayado de los elementos */
+}
+
+footer a { /* El hypervinculo de abajo en color rojo, solo el hypervinculo */
+    color: blue; /* Color del texto */
+}
+
+/* Selector de ID */
+
+#descripcion,
+#titulo {
+    border: 5px solid black; /* Le asigno un borde al elemento, con estas caracteristicas */
+    padding: 15px; /* Les asigno un margen hacia afuera */
+}
+
+#titulo { /* Tiene mas peso el id, que la clase y va para abajo, y tiene mayor peso */
+    background: blue; /* Era rojo, pero asi lo cambio a color azul el fondo del titulo */
+    border: 2px dashed white; /* Aqui le reasigno mas elementos al border, para que se vea en puntitos y blanco */
+}
+
+/* Selector de clase */
+
+.parrafo { /* Clase a la cual le asigno propiedades */
+    font-style: italic; /* Que el texto sea cursivo */
+    text-decoration: underline; /* Le asigno una decoracion de subrayado */
+    font-weight: bold; /* Que este en negrillas */
+    padding: 10px; /* Margen hacia afuera, esta un poco mas centrado y lo muestro con el background */
+}
+
+.parrafo1, /* Clases independientes a cada elemento */
+.parrafo3 {
+    background-color: green; /* Que el fondo sea verde para ver mejor el padding */
+    color: white; /* Los elementos son color blanco */
+}
+
+.parrafo3 { /* Ponemos mas enfasis en este elemento */
+    background-color: orange; /* Color de fondo del parrafo 3 */
+    color: black; /* Color del texto que sea negro */
+}
+
+/* Selector de atributo */
+
+#usuario form { /* Ruta de donde voy a personalizar, en el id uuario y esta etiqueta HTML */
+    border: 5px solid blue; /* Creo un borde para visualizar tamaño del elemento */
+    margin-top: 15px; /* Fuera del borde azul */
+    margin-bottom: 15px; /* Fuera del borde azul */
+    padding: 20px; /* Para personalizar elemento y el margen */
+}
+
+#usuario form * { /* Definimos la ruta */
+    display: block; /* Para que se vallan para abajo cada uno de los elementos */
+}
+
+input[type="text"] { /* Para los impot de tipo text */
+    margin-bottom: 15px; /* Espacio hacia abajo, abajo del input text, llegan hasta donde esta el boton */
+    padding: 10px; /* Tamaño de la caja de texto */
+    width: 300px; /* Anchura de cada elemento */
+}
+
+input[type="submit"] { /* Personalizamos el boton */
+    background: green; /* El fondo dolor verde */
+    color: white; /* Las letras en color blanco */
+    padding: 15px; /* Margenes hacia afuera */
+    font-size: 15px; /* Tamaño del texto enviar */
+    text-transform: uppercase; /* Que sea mayusculas */
+    border: 1px solid black; /* El borde, nos ayudamos del padding */
+    cursor: pointer; /* Cuando estemos dentro del elemento, que nos salga una manita */
+}
+
+/* Selector de hijo */
+
+#menu>li>a { /* Le vamos a dar mas personalizacion a los hypervinculos, todos los que vienen en lista */
+    font-size: 18px; /* Su tamaño */
+    color: red; /* El color era verde, ahora a rojo pero solo los que sigan esa ruta */
+    text-decoration: none; /* Que no tengan ningun tipo de decoracion estos elementos */
+}
+
+/* Prioridad */
+
+#saludo h1 { /* Sigo esta ruta, similar al footer, entre mas personalizacion, se complica mas hacer cambios */
+    background: brown !important; /* Tenia defino el fondo rojo, aqui lo pongo un poco mas oscuro */
+}
+
+h1 { /* Que se aplique a todas las etiquetas H1 */
+    background: purple !important; /* Le cambiamos el color al fondo de pantalla y que lo tome inmediatamente, al de arriba, pero no abajo */
+}

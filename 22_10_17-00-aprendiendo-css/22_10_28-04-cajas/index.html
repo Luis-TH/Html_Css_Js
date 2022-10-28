@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cajas en Css</title>
-    <link rel="stylesheet" href="./styles.css">
-
+    <title>Cajas en Css</title> <!-- Titulo -->
+    <link rel="stylesheet" href="./styles.css"> <!-- Vinculamos la pagina de los estilos -->
 </head>
 
-<body>
-    <h1>Cajas en Css</h1>
+<body> <!-- Dentro del body de nuestra pagina -->
+    <h1>Cajas en CSS</h1> <!-- Un titulo -->
 
     <!-- ELEMENTOS FLOTADOS -->
-    <section id="cajas">
-        <div class="caja">
-            <p>Contenido de la caja 1</p>
+    <section id="cajas"> <!-- Una seccion que tenga elementos dentro, debe ser como container -->
+        <div class="caja"> <!-- Un div con una clase -->
+            <p>Contenido de la caja 1</p> <!-- Un texto dentro de ella -->
         </div>
         <div class="caja">
             <p>Contenido de la caja 2</p>
@@ -33,25 +32,13 @@
         <div class="caja">
             <p>Contenido de la caja 6</p>
         </div>
-        <div class="caja">
-            <p>Contenido de la caja 7</p>
-        </div>
-        <div class="caja">
-            <p>Contenido de la caja 8</p>
-        </div>
-        <div class="caja">
-            <p>Contenido de la caja 9</p>
-        </div>
         <!-- LIMPIAR FLOTADOS -->
-        <div class="clearfix"></div>
+        <div class="clearfix"></div> <!-- Cuando lea esto limpia todo lo siguiente de elementos flotados -->
     </section>
 
-
-
-
     <!-- ELEMENTOS NO FLOTADOS QUE SE MANTENGAN ABAJO -->
-    <h2>Contenido despues de las cajas posicionadas</h2>
-    <p>Texto de prueba</p>
+    <h2>Contenido despues de las cajas posicionadas</h2> <!-- Elementos abajo de la seccion -->
+    <p id="footer-p">Texto de prueba</p> <!-- Un texto -->
 </body>
 
 </html>

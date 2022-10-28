@@ -1,18 +1,18 @@
-body {
+body { /* Para todo la pagina */
     background-color: #ccc; /* Fondo de pantalla un poquito gris */
-    background-image: url(./img/img1.jpg); /* Una imagen de fondo de pantalla */
+    background-image: url(./img/img1.jpg); /* Una imagen de fondo de pantalla - buscar pattern */
     background-repeat: no-repeat; /* Que no se repita la imagen */
-    background-size: 100% 100%; /* Que la imagen de fondo abarque el 100 width y 100% del tamaño del texto */
-    background-attachment: fixed; /* Que abarque el 100% de la pantalla del diaplay y este fija */
-    background-position: right bottom; /* Posicion de la imagen de fondo de pantalla mas a la derecha y mas abajo */
+    background-size: 100% 100%; /* Que la imagen de fondo abarque el 100 width y 100% del tamaño del texto, para L7 */
+    background-attachment: fixed; /* Que abarque el 100% de la pantalla del diaplay y este fija, el fondo */
+    background-position: right bottom; /* Posicion de la imagen de fondo de pantalla este a la derecha y abajo */
     color: black; /* Texto color negro */
-    text-align: justify; /* Texto justificado */
+    text-align: justify; /* Texto justificado, para que se queden rectos */
     text-indent: 15px; /* Es donde empieza el texto, la identacion */
     word-spacing: 10px; /* Espacio entre cada palabra */
     letter-spacing: 5px; /* Separacion entre cada letra */
 }
 
-#caja {
+#caja { /* Para el div con el id="caja" */
     border: 5px solid black; /* Hice caja donde va el texto, osea le di margenes */
     padding: 10px; /* Le di un padding al texto */
     background-color: rgb(94, 131, 212); /* Fondo de pantalla de la caja azul */
@@ -26,11 +26,11 @@ body {
     vertical-align: top; /* Que la alineacion sea superior */
 }
 
-h2 {
+h2 { /* Para todos los h2 */
     color: red; /* El subtitulo menor esta en rojo */
     background: white; /* El subtitulo, tiene un fondo color blanco */
     background-image: url(./img/img2.jpg); /* Tiene una imagen de fondo */
-    border: 5px solid red; /* Le puse una linea para siular una caja */
+    border: 5px solid red; /* Le puse una linea para simular una caja */
     text-align: justify; /* El texto esta justificado, osea los espacios, del dubtitulo menor */
     height: 300px; /* Mas grande el tamaño del fondo de pantalla, mas largo */
 }

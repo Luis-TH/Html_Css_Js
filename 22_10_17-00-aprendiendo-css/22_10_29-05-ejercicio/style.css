@@ -20,8 +20,8 @@ ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL Y FOOTER.
 }
 
 #general{ /* Es todo el documento HTML */
-    width: 1200px; /* Este es el espacio que dejamos hacia la derecha e izquierda, porque es centrado */
-    margin: 0 auto; /* Margenes que sean de 0 y luego automatico */
+    width: 1200px; /* Espacio del elemento, con el margin lo centramos */
+    margin: 0 auto; /* Margenes que sean de 0 y luego automatico para centrarlo */
     margin-top: 20px; /* Margen superior */
     border: 1px solid gray; /* Todo el texto HTML le asigne un borde */
 }
@@ -42,13 +42,19 @@ ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL Y FOOTER.
 
 #menu{ /* Donde va la barra de navegacion */
     background: rgb(204, 201, 201); /* Fondo gris */
+    padding-left: 33.3%;
 }
 
 #menu>ul>li{ /* Son los elementosde la barra de navegacion, los links */
+    /* display: inline-block; /* Es lo mismo que display block y float left */
     display: block; /* Para que cada uno se comporte como un bloque */
     float: left; /* Los hago elementos flotantes y se quedan a la izquierda, unica linea */
     padding: 5px; /* Un espacio entre cada elemento */
-    border-right: 1px solid rgb(148, 142, 142); /* Borde lateral de lado derecho, es una division */
+    border-left: 1px solid rgb(148, 142, 142); /* Borde lateral de izquierdo, es una division */
+}
+
+#border-right{ /* Le asigno un nombre al ultimo elemento de la barra de navegacion y le pongo un borde al final */
+    border-right: 1px solid rgb(148, 142, 142); /* Borde lateral de derecho, es una division, ultimo elemento */
 }
 
 #menu>ul>li>a{ /* Directamente a los hypervinculos */
@@ -62,7 +68,7 @@ ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL Y FOOTER.
     cursor: pointer; /* Que se convierta en una manita al pasarle el cursor */
 }
 
-#menu>ul>li:hover>a{ /* Al pasarle el boton a las letras del hypervinculo */
+#menu>ul>li:hover>a{ /* Al pasarle el boton a las letras del hypervinculo, observa el hover, no esta al final */
     color: white /* Cuando paso el mouse, cambian de color a blanca las letras */
 }
 
@@ -76,7 +82,7 @@ ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL Y FOOTER.
     width: 29.90%; /* Para que ocupe el 99.9 del ancho a la izquierda y dejarlo asi */
     border: 1px solid red; /* Le asigno un estilo de caja al aside */
     min-height: 500px; /* Que esto sea el tamaño minimo a lo largo */
-    max-height: 650px; /* Tamaño maximo a lo largo que puede medir */
+    max-height: 659px; /* Tamaño maximo a lo largo que puede medir */
     text-align: center; /* Pongo el texto centrado */
     overflow-y: scroll; /* Para que a lo largo se pueda bajar */
 }
@@ -90,7 +96,7 @@ h2{
     border-bottom: 1px solid whitesmoke; /* Al h1, le pusimos un borde muy discreto */
     padding: 15px; /* Le damos un tamaño, de dentro hacia afuera del h1 */
     color: rgb(92, 92, 92); /* El color es un negro un poco gris del h1 */
-    text-shadow: 0 0 2px black; /* Le pongo sombra al h1 */
+    text-shadow: 0 0 2px black; /* Le pongo sombra al h1 (eje x, eje y, y difuminado)*/
 }
 
 #contenido .caja{ /* Estilos para section contenido y la clase caja */
@@ -101,23 +107,31 @@ h2{
     border: 1px solid gray; /* El borde de cada caja */
     color: #444; /* Color gris del texto */
     float: left; /* Todo va a flotar a la izquierda para que tome el tamaño del contenido y tamaño caja */
-    margin: 3%; /* Espacio entre cada elemento */
+    margin: 4%; /* Espacio entre cada elemento */
     margin-left: 40px; /* Margen hacia la izquierda al iniciar */
     text-align: center; /* Texto centrado */
     line-height: 200px; /* Espacio hacia arriba del texto */
     text-transform: uppercase; /* Que el texto este en mayusculas */
-    box-shadow: 5px 5px 20px gray; /* Sombra a las cajas */
-    border-radius: 50px 10px 4px 61px; /* Estilos a las cajas en las esquinas */
+    box-shadow: 10px 5px 20px gray; /* Sombra a las cajas, eje x, eje y y difuminado */
+    border-radius: 50px 10px 4px 61px; /* Estilos a las cajas en las esquinas der/izq/abj-izq/abj-der */
 }
 
 .sombra-inferior{ /* Le asigno unos estilos a la caja 2 */
-    box-shadow: 5px 5px 5px gray inset !important; /* Modificacion de la caja 2 */
+    box-shadow: 5px 5px 5px gray inset !important; /* Modificacion de las cajas pares, inset=sombra por dentro */
+}
+
+.sombra-inferior-par{ /* Le asigno unos estilos a la caja 2 */
+    box-shadow: -5px -5px 5px  gray inset !important; /* Modificacion de las cajas pares */
+}
+
+.caja-par{
+    border-radius: 10px 50px 61px 4px !important; /* Estilos a las cajas en las esquinas izq der abj/der abj/izq */
 }
 
 footer{ /* Color Rojo para elemento, para el elemento HTML footer */
     width: 100%; /* Anchura de general, lo que ocupa */
-    height: 30px; /* Lo que mide el campo de altura, osea quedo mas en medio el texto del footer */
-    line-height: 30px; /* Bajo un poco mas el texto, linea de arriba hacia abajo(invisible) */
+    height: 50px; /* Lo que mide el campo de altura, osea quedo mas en medio el texto del footer */
+    line-height: 25px; /* Bajo un poco mas el texto, linea de arriba hacia abajo(invisible) */
     background: gray; /* Fondo color gris */
     text-align: center; /* Texto centrado */
     color: rgb(36, 34, 34); /* Color de texto un poco mas gris y menos negro */
@@ -150,7 +164,6 @@ footer{ /* Color Rojo para elemento, para el elemento HTML footer */
 .fija{ /* Esta ya esta fuera de todos los margenes, empieza desde 0 en el elemento HTML */
     position: fixed; /* Para que no se pueda mover */
     top: 21.5%; /* De arriba hacia abajo, posicion */
-    left: 0; /* Hasta la izquierda */
     border: 1px solid black; /* Le pongo un borde */
     background-color: brown; /* Color de fondo azul */
     color: white; /* Color de las letras blanco */

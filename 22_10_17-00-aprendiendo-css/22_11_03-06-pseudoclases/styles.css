@@ -1,46 +1,45 @@
-* {
+* { /* Le damos una tipografia a la pagina */
     font-family: Arial, Helvetica, sans-serif;
 }
 
-ul li:first-child {
-    color: purple;
-    font-weight: bold;
+ul li:first-child { /* Al primer ul>li(primer elemento) */
+    color: purple; /* Le asigno el color purpura a las letras */
+    font-weight: bold; /* Que el tipo de texto sea negritas */
 }
 
-ul li:nth-child(2) {
-    color: orange;
-    font-weight: bold;
+ul li:nth-child(2) { /* Para asignarlo en un grupo de elementos, se elije el segundo elemento */
+    color: orange; /* Al segundo elemento color de texto naranja */
+    font-weight: bold; /* Tipografia de este elemento negritas */
 }
 
-ul li:last-child {
-    color: gray;
-    font-weight: bold;
+ul li:last-child { /* Al ultimo elemento del arreglo */
+    color: gray; /* Le asignamos un color de texto */
+    font-weight: bold; /* Que este en negritas */
 }
 
-#mi-enlace {
-    font-size: 30px;
-    color: lightsalmon;
-    ∫
+#mi-enlace { /* Estilos personalizados al enlace */
+    font-size: 30px; /* Tamaño de texto */
+    color: lightsalmon; /* Color de la fuente */
 }
 
-#mi-enlace:visited {
-    color: orangered;
+#mi-enlace:visited { /* Cuando el enlace sea visitado cambiar de color */
+    color: orangered; /* Cambio de color cuando el enlace sea visitado */
 }
 
-#mi-enlace:hover {
-    color: blue;
+#mi-enlace:hover { /* Al pasar el mouse por el enlace */
+    color: blue; /* El color se vuelve azul */
 }
 
-#mi-enlace:active {
-    color: green;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+#mi-enlace:active { /* Al hacer click hay una transicion */
+    color: green; /* Cambia de color */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Cambia la tipografia */
 }
 
-input[type="text"] {
-    margin-top: 20px;
-    padding: 10px;
+input[type="text"] { /* A este input le doy estilos, pero podrian ser mas elementos iguales */
+    margin-top: 20px; /* Margen superior, de arriba a abajo es el espacio */
+    padding: 10px; /* Es el margen de adentro hacia afuera del elemento, en todos los angulos */
 }
 
-input[type="text"]:hover {
-    border: 4px dashed red;
+input[type="text"]:hover { /* Al pasarle el mouse */
+    border: 4px dashed red; /* Que el borde, aumente los pizeles y el borde sean puntitos */
 }

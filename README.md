@@ -30,4 +30,5 @@ Formulario
 <a href>: Nos redirige a una pagina
         target: para decir si quiero que sea una pestaña nueva, no en la misma
 Si ha una etiqueta le asigno el atributo style le puedo poner lo que yo quiera de CSS
+--CSS Puro--
  -->

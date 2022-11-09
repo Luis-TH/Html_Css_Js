@@ -1,57 +1,62 @@
-#boton {
-    display: block;
-    padding: 20px;
-    background: green;
-    color: white;
-    width: 200px;
+h1{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    border: 5px solid rgb(6, 12, 6);
-    transition: border 500ms, background 3s, border-radius 1s;
+}
+#boton { /* Al id boton */
+    margin-left: 43%; /* Centre el elemento con Porcentajes */
+    display: block; /* Para que se comporte como un bloque */
+    padding: 20px; /* Espacio hacia los lados */
+    background: green; /* Que de fondo sea color verde */
+    color: white; /* Que el color del texto sea blanco */
+    width: 200px; /* La anchura del elemento */
+    text-align: center; /* Que el texto este centrado */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Tipo de tipografia */
+    font-weight: bold; /* Que el texto este en negritas */
+    text-decoration: none; /* Que el texto no tenga ningun elemento decorativo  */
+    border: 5px solid rgb(6, 12, 6); /* El borde del elemento */
+    /* Transicion del borde en .5s, donde el fondo cambie en 3s, y el borde redondeado en 1s */
+    transition: border 500ms, background 3s, border-radius 1s; /* Tambien puedo usar el all */
 }
 
-#boton:hover {
-    border-radius: 15px;
-    background: orangered;
-    border: 5px solid red;
+#boton:hover { /* Al dejarle el cursor dentro del elemento */
+    border-radius: 15px; /* El estilo del borde redondeado, solo poquito */
+    background: orangered; /* Que cambie color de fondo */
+    border: 5px solid blue; /* El borde del elemento */
 }
 
-#caja {
-    margin-top: 25px;
-    width: 250px;
-    height: 250px;
-    background: lightseagreen;
-    color: white;
-    border: 5px solid black;
-    font-size: 20px;
-    text-align: center;
-    line-height: 200px;
-    animation-name: desplazamiento;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+#caja { /* Estilos al id caja */
+    margin-top: 25px; /* Margen superior */
+    width: 250px; /* Anchura del elemento */
+    height: 250px; /* Altura del elemento */
+    background: lightseagreen; /* Su color de fondo */
+    color: white; /* Color del texto */
+    border: 5px solid black; /* El borde del elemento */
+    font-size: 20px; /* Tamaño del texto */
+    text-align: center; /* Texto centrado */
+    line-height: 250px; /* El texto va a la mitad del elemento */
+    animation-name: desplazamiento; /* Nombre de la animacion a personalizar */
+    animation-duration: 10s; /* El tiempo que dura la animacion */
+    animation-iteration-count: infinite; /* Que la animacion sea infinita */
+    animation-timing-function: linear; /* Para que valla a la misma velocidad la animacion */
 }
 
-@keyframes desplazamiento {
-    0% {
-        margin-left: 0px;
-        transform: rotate(0deg);
+@keyframes desplazamiento { /* Para crear la animacion */
+    0% { /* Al iniciar la animacion */
+        margin-left: 0px; /* Que el margen del elemento sea todo a la izquierda */
+        transform: rotate(0deg); /* Que el elemento no rote nada */
     }
-    50% {
-        margin-left: 1200px;
-        transform: rotate(360deg);
-        border-radius: 999%;
+    50% { /* Cuando la animacion llegue al 50% */
+        margin-left: 1600px; /* Que el margen de la izquierda a la derecha sea de tantos pixeles */
+        transform: rotate(360deg); /* Que el elemento rote 360 grados (osea completo) */
+        border-radius: 999%; /* Que el borde sea del elemento sea total, convertirlo en circulo */
     }
-    75% {
-        background: red;
+    75% { /* Al 75% de la animacion */
+        background: red; /* Cambie el background a rojo */
     }
-    77% {
-        border: 10px dashed blue;
+    77% { /* Al llegar al 77% de la animacion */
+        border: 10px dashed blue; /* Cambie estilos del borde */
     }
-    100% {
-        margin-left: 0px;
-        transform: rotate(0deg);
+    100% { /* Al 100% de la animacion */
+        margin-left: 0px; /* Aqui tiene que estar */
+        transform: rotate(0deg); /* El elemento ya no rota */
     }
 }

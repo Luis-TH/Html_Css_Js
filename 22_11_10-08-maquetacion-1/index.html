@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Lenguaje Español -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Máster en CSS</title> <!-- Titulo de la pestaña -->
+    <link rel="icon" type="image/x-icon" href="img/logo.png"> <!-- Es el icon, que va en la izquierda de la pestaña -->
+    <link rel="stylesheet" type="text/css" href="css/styes.css"> <!-- Agrego la hoja de estilos -->
+</head>
+
+<body>
+    <!-- Inicio de la cabecera -->
+    <header id="header"> <!-- La cabecera -->
+        <div id="logotipo"> <!-- Simplemente es un div -->
+            <a href="index.html"> <!-- Pongo la referencia, lo manejo como un Brand -->
+            <img src="img/logo.png" alt="Logotipo Web"> <!-- Adjunto la imagen que pongo de logotipo -->
+        </div>
+        <h1> <!-- Titulo de la pagina -->
+                Master en CSS <!-- Lo que pongo de titulo -->
+            </a> <!-- Cerramos el link, que lo manejo como un Brand -->
+        </h1> <!-- Cierro rl Titulo -->
+    </header> <!-- Cierro la cabecera -->
+    <!-- Fin de la cabecera -->
+
+    <!-- Menu de navegacion -->
+    <nav id="nav"> <!-- nav es cuando voy a poner enlaces de navegacion -->
+        <ul> <!-- Empezamo con una lista desordenada -->
+            <li> <!-- Los elementos de la lista -->
+                <a href="index.html">Inicio</a> <!-- Un link, con un texto -->
+            </li>
+            <li>
+                <a href="index.html">Contenido</a>
+            </li>
+            <li>
+                <a href="index.html">Requerimientos</a>
+            </li>
+            <li>
+                <a href="index.html">Lenguajes ⬇️</a>
+                <ul>
+                    <li>
+                        <a href="index.html">HTML</a>
+                    </li>
+                    <li>
+                        <a href="index.htm">CSS</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="index.html">Frameworks ⬇️</a>
+                <ul>
+                    <li>
+                        <a href="index.html">LESS</a>
+                    </li>
+                    <li>
+                        <a href="index.html">SASS</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Bootstrap</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="index.html">Proyectos</a>
+            </li>
+            <li>
+                <a href="index.html">Instructor</a>
+            </li>
+            <li>
+                <a href="index.html">Reseñas</a>
+            </li>
+            <li>
+                <a href="index.html">Blog</a>
+            </li>
+            <li>
+                <a href="index.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Fin del menu -->
+
+    <!-- Inicio del contenido central -->
+    <div id="content"> <!-- Nueva division -->
+        <!-- Inicio de la barra lateral -->
+        <aside id="aside"> <!-- Barra ateral izquierda -->
+            <div class="widget" id=login> <!-- Otro div con una clase y un id -->
+                <h3>Entrar a la Web</h3> <!-- Un subtitulo -->
+                <form> <!-- Formulario -->
+                    <label>Usuario: </label> <!-- Una etiqueta -->
+                    <input type="text"> <!-- El tipo del input -->
+                    <label>Contraseña</label> <!-- Etiqueta -->
+                    <input type="password"> <!-- Tipo de valor del input, que solo salgan puntitos -->
+                    <input type="submit" value="Entrar"> <!-- Un boton -->
+                </form>
+                <div id="aside-links"> <!-- Una division abajo del form de la barra lateral izquierda -->
+                    <a href="#">Profesor</a> <!-- Las referencias a cada uno de los elementos -->
+                    <a href="#">Alumnos</a>
+                    <a href="#">Calificaciones</a>
+                </div> 
+            </div>
+
+            <div class="widget" id=login> <!-- Otra division abajo de los enlaces de la barra izquierda -->
+                <h3 class="blue">Aula Virtual I</h3> <!-- Un subtitulo  -->
+                <form> <!-- Un formulario -->
+                    <label>Nombre de Usuario: </label> <!-- Una etiqueta -->
+                    <input type="text"> <!-- El campo de un input -->
+                    <label>Contraceña</label>
+                    <input type="password">
+                    <input type="submit" value="Entrar"> <!-- Otro input del tipo boton -->
+                </form>
+            </div>
+
+            <div class="widget" id=login> <!-- Otra division -->
+                <h3 class="red">Aula Virtual II</h3> <!-- Un subtitulo -->
+                <form> <!-- Formulario -->
+                    <label>Nombre de Usuario: </label> <!-- Etiqueta -->
+                    <input type="text"> <!-- Campo de texto -->
+                    <label>Contraceña</label> <!-- Etiqueta -->
+                    <input type="password"> <!-- Campo de texto -->
+                    <input type="submit" value="Entrar"> <!-- Boton -->
+                </form>
+            </div>
+
+            <div class="widget" id="ultimoWidget"> <!-- Otro div -->
+                <h3>Enlaces de Interes</h3> <!-- Subtitulo -->
+                <ul> <!-- Lista desordenada -->
+                    <li> <!-- Una lista -->
+                        <a href="#">Html - Css</a> <!-- Links -->
+                    </li>
+                    <li>
+                        <a href="#">JavaScript</a> 
+                    </li>
+                    <li>
+                        <a href="#">React</a>
+                    </li>
+                    <li>
+                        <a href="#">Node</a>
+                    </li>
+                    <li>
+                        <a href="#">Git</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Fin de la barra lateral -->
+
+        <!-- Inicio de las secciones -->
+
+        <div id="sections">
+
+            <section id="frontend">
+                <span class="sticker">
+                    <img class="stickerOne" src="./img/scotch.png" alt="Pegatina">
+                    <img class="stickerTwo" src="./img/scotch.png" alt="Pegatina">
+                </span>
+                <h2 class="titulo">Noticias de Front-End</h2>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <a href="#">Titulo de la entrada</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum iste quam rerum, aspernatur doloribus, atque ullam repellendus eius ipsa laudantium eum quas, amet cum alias expedita necessitatibus repudiandae esse dolores.</p>
+                    <span class="date">[20-12-2020. Luis R. Trujillo Hunt] </span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <a href="#">Titulo de la entrada</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum iste quam rerum, aspernatur doloribus, atque ullam repellendus eius ipsa laudantium eum quas, amet cum alias expedita necessitatibus repudiandae esse dolores.</p>
+                    <span class="date">[20-12-2020. Luis R. Trujillo Hunt] </span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <a href="#">Titulo de la entrada</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum iste quam rerum, aspernatur doloribus, atque ullam repellendus eius ipsa laudantium eum quas, amet cum alias expedita necessitatibus repudiandae esse dolores.</p>
+                    <span class="date">[20-12-2020. Luis R. Trujillo Hunt] </span>
+                </article>
+            </section>
+            <section id="frontend">
+                <span class="sticker">
+                    <img class="stickerOne" src="./img/scotch.png" alt="Pegatina">
+                    <img class="stickerTwo" src="./img/scotch.png" alt="Pegatina">
+                </span>
+                <h2 class="titulo red">Noticias de Back-End</h2>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <a href="#">Titulo de la entrada</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum iste quam rerum, aspernatur doloribus, atque ullam repellendus eius ipsa laudantium eum quas, amet cum alias expedita necessitatibus repudiandae esse dolores.</p>
+                    <span class="date">[20-12-2020. Luis R. Trujillo Hunt] </span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <a href="#">Titulo de la entrada</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum iste quam rerum, aspernatur doloribus, atque ullam repellendus eius ipsa laudantium eum quas, amet cum alias expedita necessitatibus repudiandae esse dolores.</p>
+                    <span class="date">[20-12-2020. Luis R. Trujillo Hunt] </span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <a href="#">Titulo de la entrada</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum iste quam rerum, aspernatur doloribus, atque ullam repellendus eius ipsa laudantium eum quas, amet cum alias expedita necessitatibus repudiandae esse dolores.</p>
+                    <span class="date">[20-12-2020. Luis R. Trujillo Hunt] </span>
+                </article>
+            </section>
+            <section id="frontend">
+                <span class="sticker">
+                    <img class="stickerOne" src="./img/scotch.png" alt="Pegatina">
+                    <img class="stickerTwo" src="./img/scotch.png" alt="Pegatina">
+                </span>
+                <h2 class="titulo orange">Noticias de Instructor</h2>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <a href="#">Titulo de la entrada</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum iste quam rerum, aspernatur doloribus, atque ullam repellendus eius ipsa laudantium eum quas, amet cum alias expedita necessitatibus repudiandae esse dolores.</p>
+                    <span class="date">[20-12-2020. Luis R. Trujillo Hunt] </span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <a href="#">Titulo de la entrada</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum iste quam rerum, aspernatur doloribus, atque ullam repellendus eius ipsa laudantium eum quas, amet cum alias expedita necessitatibus repudiandae esse dolores.</p>
+                    <span class="date">[20-12-2020. Luis R. Trujillo Hunt] </span>
+                </article>
+                <article class="article">
+                    <span class="icon">a</span>
+                    <a href="#">Titulo de la entrada</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum iste quam rerum, aspernatur doloribus, atque ullam repellendus eius ipsa laudantium eum quas, amet cum alias expedita necessitatibus repudiandae esse dolores.</p>
+                    <span class="date">[20-12-2020. Luis R. Trujillo Hunt] </span>
+                </article>
+            </section>
+        </div>
+        <!-- Fin de las secciones -->
+
+        <aside id="frase">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, error magni sint ad eius reiciendis repellat, odio quo.
+            <a href="#">Leer más Frases</a>
+        </aside>
+
+        <div class="clearfix"></div>
+        <div id="history">
+            <a href="#">[Ver historio de noticias]</a>
+        </div>
+    </div>
+    <!-- Fin del contenido central -->
+
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <p>&copy; Desarrollado - Luis Raymond Trujillo Hunt</p>
+    </footer>
+
+</body>
+
+</html>

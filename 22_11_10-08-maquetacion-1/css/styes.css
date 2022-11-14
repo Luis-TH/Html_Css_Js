@@ -23,6 +23,7 @@
     font-style: normal;
 }
 
+
 /* ESTILOS GENERALES */
 
 * {
@@ -125,6 +126,7 @@ button:active {
     text-shadow: 0px 0px 0px #cccccc;
 }
 
+
 /* CABECERA */
 
 #header {
@@ -187,7 +189,7 @@ button:active {
     list-style: none;
     text-decoration: none;
     margin: 0px auto;
-    width: 1090px;
+    width: 65.9rem;
 }
 
 #nav>ul>li {
@@ -205,17 +207,25 @@ button:active {
     text-decoration: none;
 }
 
-#nav>ul>li>:first-child {
+#nav>ul>li>a:first-child {
     border-left: 1px solid gray;
 }
 
-#nav>ul>li>:last-child {
+#navLast {
     border-right: 1px solid gray;
 }
 
 #nav>ul>li:hover {
     background-color: #70b231;
     box-shadow: 0px 0px 4px green inset;
+}
+
+#navxD{
+    width: 5.5rem;
+}
+
+#navxD1{
+    width: 6.3rem;
 }
 
 /* MENU DESPPLEGABLE */
@@ -225,14 +235,15 @@ button:active {
     position: absolute;
     box-shadow: 0px 0px 2px gray;
     z-index: 1;
+    text-align: center;
 }
 
-#navMenuDesplegable0 {
-    width: 127.4px !important;
+#navxDD{
+    width: 8.1rem !important; 
 }
 
-#navMenuDesplegable1 {
-    width: 140px !important;
+#navxD11{
+    width: 8.9rem !important; 
 }
 
 #nav>ul>li:hover>ul {
@@ -243,7 +254,6 @@ button:active {
     background-color: #F2F1F0;
     border-bottom: 1px solid #D6D6D6;
     padding: 8px;
-    text-align: center;
     line-height: 25px;
     font-size: 13px;
     transition: all 300ms;
@@ -254,8 +264,8 @@ button:active {
 }
 
 #nav>ul>li:hover>ul>li:hover {
-    box-shadow: 0px 0px 6px #9a9090 inset;
-    background: #f4f1f1;
+    box-shadow: 0px 0px 6px #666565 inset;
+    /* background: #cccccc; */
 }
 
 
@@ -298,6 +308,7 @@ aside,
     padding-right: 10px;
     font-size: 14px;
     border-bottom: 1px dashed #333333;
+    text-align: center;
 }
 
 #aside .widget:last-child {
@@ -352,13 +363,7 @@ aside,
     text-align: center;
 }
 
-#aside-links{
-    text-align: center;
-}
 
-#ultimoWidget{
-    text-align: center;
-}
 /* SECCIONES */
 
 #sections {

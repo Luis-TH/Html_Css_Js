@@ -1,11 +1,11 @@
 /* FUENTES */
-
-@font-face {
-    font-family: "nevis";
-    src: url("fonts/nevis.eot");
-    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"), url("fonts/nevis.woff") format("woff"), url("fonts/nevis.ttf") format("truetype"), url("fonts/nevis.svg") format("svg");
-    font-weight: normal;
-    font-style: normal;
+@font-face { /* Importo las fuentes a utilizar */
+    font-family: "nevis"; /* Tipo de fuente */
+    src: url("fonts/nevis.eot"); /* url */
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"), url("fonts/nevis.woff") format("woff"), 
+    url("fonts/nevis.ttf") format("truetype"), url("fonts/nevis.svg") format("svg");
+    font-weight: normal; /* El tamaño de texto normal, sin negritas ni nada */
+    font-style: normal; /* Que el estilo de la fuente sea normal */
 }
 
 @font-face {
@@ -18,171 +18,165 @@
 @font-face {
     font-family: "icons";
     src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg') url("fonts/websymbols-regular-webfont.eot");
-    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/websymbols-regular-webfont.woff") format("woff"), url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/websymbols-regular-webfont.woff") 
+    format("woff"), url("fonts/websymbols-regular-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 
 /* ESTILOS GENERALES */
-
-* {
-    padding: 0px;
-    margin: 0px;
+* { /* A todo el elemento */
+    padding: 0; /* Que no haya espacio hacia arriba ni nada */
+    margin: 0; /* Que no haya espacio hacia arriba ni nada */
 }
 
-body {
-    background-image: url("./../img/paven.png");
+body { /* A todo el cuerpo del elemento */
+    background-image: url("./../img/paven.png"); /* Ponrle un fondo a la pagina */
 }
 
-a {
+a { /* Enlaces globales a todos los enlaces */
+    color: #529125; /* Color del texto */
+    text-decoration: none; /* Sin nigun tipo de decoracion */
+}
+
+a:visited { /* Cuando sean visitados que cambien a este color */
     color: #529125;
-    text-decoration: none;
 }
 
-a:visited {
-    color: #529125;
+a:hover { /* Cuando les pasemos el cursor cambien un poco de color */
+    color: #285616; /* Color un poco mas verde/gris */
 }
 
-a:hover {
-    color: #285616;
-}
-
-.red {
+.red { /* Defino esta clase */
     color: #9b2422 !important;
 }
 
-.blue {
+.blue { /* Defino esta clase */
     color: #0c73f2 !important;
 }
 
-.orange {
+.orange { /* Defino esta clase */
     color: #d69d2a !important;
 }
 
-.icon {
-    font-family: icons;
-    float: left;
-    margin-right: 5px;
-    margin-top: -2px;
+.icon { /* Esta clase la traemos desde las fuentes */
+    font-family: icons; /* El tipo de familia de esta letra */
+    float: left; /* Que se flote a la izquierda */
+    margin-right: 5px; /* Margen que pongo de izquierda a derecha */
+    margin-top: -2px; /* Que este un poco mas arriba el icono */
 }
 
-.clearfix {
-    float: none;
-    clear: both;
+.clearfix { /* Limpoamos los flotantes */
+    float: none; /* Que no haya nada flotando */
+    clear: both; /* Limpia ambos */
 }
-
 
 /* FORMULARIOS */
-
-input[type="text"],
+input[type="text"], /* A todos estos campos */
 input[type="email"],
 input[type="password"],
 select {
-    border: 1px solid #c9c9c9;
-    box-shadow: 0px 0px 2px inset;
-    background: white;
-    padding: 1px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    color: gray;
-    transition: all 300ms;
+    border: 1px solid #c9c9c9; /* Asigno este borde suave */
+    box-shadow: 0px 0px 2px inset; /* Lo ponemos un poco mas sombreado */
+    background: white; /* Que el fondo dentro sea color blanco */
+    padding: 1px; /* La anchura de este elemento de adentro hacia afuera-puedo eliminarla */
+    padding-top: 2px; /* El espacio hacia arriba de cada elemento */
+    padding-bottom: 2px; /* El espacio hacia abajo de este elemento */
+    color: gray; /* El color de estos elementos es gris */
+    transition: all 300ms; /* Haz la transicion en este tiempo */
 }
 
-input[type="text"]:focus,
+input[type="text"]:focus, /* Esto es como un margen hacia adentro cuando elijo cualquier elemento */
 input[type="email"]:focus,
 input[type="password"]:focus,
 select:focus {
-    border: 1px solid #70b231;
-    color: black;
+    border: 1px solid #70b231; /* Borde hacia adentro de cada elemento input */
+    color: black; /* Color del texto dentro del input */
 }
 
-input[type="button"],
+input[type="button"], /* A todos los elementos de este tipo */
 input[type="submit"],
 input[type="reset"],
 button {
-    display: block;
-    border-radius: 2px;
-    border: 1px solid green;
-    width: 60px;
-    padding: 3px;
-    color: white;
-    background-color: #70b231;
-    cursor: pointer;
+    display: block; /* Que los botones se comporten como un bloque */
+    border-radius: 2px; /* Que estos elementos tengan un borde redondeado minumamente */
+    border: 1px solid green; /* Que los bordes de cada elemento tengan esto */
+    width: 60px; /* Anchura de los botones */
+    padding: 3px; /* El espacio del elemento letra de adentro hacia afuera espacio */
+    color: white; /* Que su color sea blanco */
+    background-color: #70b231; /* Que tengan este fondo */
+    cursor: pointer; /* Que al pasar el cursor salga una manita */
 }
 
-input[type="button"]:hover,
+input[type="button"]:hover, /* Al pasarle por encima al elemento */
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover {
-    box-shadow: 0px 0px 2px gray;
+    box-shadow: 0px 0px 2px gray; /* Que se haga un pequeño sombreado hacia afuera */
 }
 
-input[type="button"]:active,
+input[type="button"]:active, /* Cuando le deje apretado */
 input[type="submit"]:active,
 input[type="reset"]:active,
 button:active {
-    box-shadow: 0px 0px 3px inset;
-    text-shadow: 0px 0px 0px #cccccc;
+    box-shadow: 0px 0px 3px inset; /* Una sombra de la caja interior, de afuera hacia adentro */
+    text-shadow: 0px 0px 0px #cccccc; /* Que tome un color blanco el texto, sombreado */
 }
-
 
 /* CABECERA */
-
-#header {
-    min-width: 1024px;
-    width: 100%;
-    height: 250px;
-    margin: 0px auto;
+#header { /* A donde tengo el logotipo */
+    min-width: 1024px; /* Anchura del elemento maxima */
+    width: 100%; /* Anchura del 100% */
+    height: 250px; /* Lo que mide de altura */
+    margin: 0 auto; /* Sin margenes */
 }
 
-#header a {
-    text-decoration: none;
+#header a { /* Elemento a del logo */
+    text-decoration: none; /* Sin ningun tipo de decoracion */
 }
 
-#header #logotipo {
-    width: 770px;
-    margin: 0px auto;
-    padding-top: 20px;
+#header #logotipo { /* En el header, al id logotipo */
+    width: 770px; /* Una anchura del elemento */
+    margin: 0px auto; /* Que no tenga ningun margen y auto para dejarlo enmedio */
+    padding-top: 20px; /* Margen superior */
 }
 
-#header #logotipo img {
-    display: block;
-    text-align: center;
-    margin: 0px auto;
-    width: 140px;
+#header #logotipo img { /* Al elemeto img */
+    display: block; /* Que se comporte como un bloque */
+    text-align: center; /* Que su texto este centrado puedo/eliminar */
+    margin: 0 auto; /* Para centrar el elemento */
+    width: 140px; /* Anchura del elemento */
 }
 
-#header h1 {
-    text-align: center;
-    font-size: 40px;
-    font-family: "nevis";
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: 10px;
-    text-shadow: 0px 2px 1px #333333;
-    transition: all 300ms;
+#header h1 { /* id=header, a la etiqueta h1 */
+    text-align: center; /* Centramos el texto */
+    font-size: 40px; /* Tamaño del texto */
+    font-family: "nevis"; /* Camiamos la fuente del texto */
+    text-transform: uppercase; /* Que este en mayusculas */
+    letter-spacing: 4px; /* Espacio entre cada letra */
+    margin-top: 10px; /* Espacio que dejamos del h1 de arriba hacia abajo */
+    text-shadow: 0px 2px 1px #333333; /* Sombreado a la derecha/abajo/difuminado:hover */
+    transition: all 300ms; /* El tiempo en el cual se hace la ransicion */
 }
 
-#header h1:hover {
-    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #70b231;
+#header h1:hover { /* id=header, de los elementos h2. al pasarle el mouse */
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #70b231; /* Sombra derecha/abajo/arriba, color, sombra derecha/abajo/difuminado, color */
 }
 
-#header h1 a {
-    color: #70b231;
+#header h1 a { /* Tipo Baner y el color del elemento */
+    color: #70b231; /* Color del elemento */
 }
-
 
 /* BARRA DE NAVEGACION */
-
-#nav {
-    width: 100%;
-    height: 40px;
-    background-color: #333333;
-    /* color: white; */
-    font-family: sans-serif, Helvetica, Arial;
-    font-size: 14px;
-    box-shadow: 0px 0px 2px gray;
+#nav { /* id nav */
+    width: 100%; /* Que la linea negra mida un 100% del ancho */
+    height: 40px; /* Tamaño de la linea */
+    background-color: #333333; /* Color de fondo negro */
+    /* color: white; */ /* Color blanco */
+    font-family: sans-serif, Helvetica, Arial; /* Tipo de letra */
+    font-size: 14px; /* Tamaño de la letra */
+    box-shadow: 0px 0px 2px gray; /* Es el sombreado de la caja, es hacia afuera */
 }
 
 #nav ul {
@@ -264,7 +258,7 @@ button:active {
 }
 
 #nav>ul>li:hover>ul>li:hover {
-    box-shadow: 0px 0px 6px #666565 inset;
+    box-shadow: 0px 7px 6px #666565 inset;
     /* background: #cccccc; */
 }
 

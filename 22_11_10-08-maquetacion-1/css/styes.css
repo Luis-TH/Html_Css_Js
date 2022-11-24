@@ -179,65 +179,63 @@ button:active {
     box-shadow: 0px 0px 2px gray; /* Es el sombreado de la caja, es hacia afuera */
 }
 
-#nav ul {
-    list-style: none;
-    text-decoration: none;
-    margin: 0px auto;
-    width: 65.9rem;
+#nav ul { /* id=nav y en el elemento ul, la lista que esta negra */
+    list-style: none; /* Lista desordenada */
+    text-decoration: none; /* Sin ninguna decoraciion */
+    margin: 0px auto; /* Para dejar el margen centrado */
+    width: 65.9rem; /* La anchura de cada elemento de la barra de navegacion */
 }
 
-#nav>ul>li {
-    line-height: 40px;
-    float: left;
-    /* border-right: 1px solid gray; */
-    transition: 300ms;
+#nav>ul>li { /* De cada elemento de la lista */
+    line-height: 40px; /* Lo que mide el texto de arriba hacia abajo  */
+    float: left; /* Que los elementos sean flotantes a la izquierda para poderlos acomodar */
+    transition: 300ms; /* Que hagan la transicion en 300ms */
 }
 
-#nav>ul>li a {
-    display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: white;
-    text-decoration: none;
+#nav>ul>li a { /* Que cada elemento link se comporte  */
+    display: block; /* Que se comporte como un bloque */
+    padding-left: 20px; /* Espacio de las letras de la izquierda a la derecha */
+    padding-right: 20px; /* Espacio de la derecha a la derecha */
+    color: white; /* Que el color sea blanco */
+    text-decoration: none; /* Sin ningun tipo de decoracion */
 }
 
-#nav>ul>li>a:first-child {
+#nav>ul>li>a:first-child { /* Al primer elemento de los links les pongp una linea */
     border-left: 1px solid gray;
 }
 
-#navLast {
-    border-right: 1px solid gray;
+#navLast { /* Con un id le creo la ultima linea al ultimo link */
+    border-right: 1px solid gray; /* Una linea al ultimo elemento */
 }
 
-#nav>ul>li:hover {
-    background-color: #70b231;
-    box-shadow: 0px 0px 4px green inset;
+#nav>ul>li:hover { /* Al pasarle al cada elemento de la lista */
+    background-color: #70b231; /* Va a cambiar el color */
+    box-shadow: 0px 0px 4px green inset; /* de adentro hacia la izquierda, dentro hacia arriba, espacio hacia afuera, verde y hacia dentro */
 }
 
-#navxD{
-    width: 5.5rem;
+#navxD{ /* id de un elemento individual */
+    width: 5.5rem; /* Asignacion de tamaño fijo */
 }
 
-#navxD1{
-    width: 6.3rem;
+#navxD1{ /* id de un elemento individual */
+    width: 6.3rem; /* Asignacion de tamaño fijo */
 }
 
 /* MENU DESPPLEGABLE */
-
-#nav>ul>li>ul {
-    display: none;
-    position: absolute;
-    box-shadow: 0px 0px 2px gray;
-    z-index: 1;
-    text-align: center;
+#nav>ul>li>ul { /* id=nav hasta el elemento ul */
+    display: none; /* Para convertir el display en invisible */
+    position: absolute; /* Que la posicion no se pueda mover, que sea absoluta en el espacio */
+    box-shadow: 0px 0px 2px gray; /* La sombra del elemento va ser gris */
+    z-index: 1; /* Que al sacarlo se quede hasta afuera */
+    text-align: center; /* Que el texto este centrado */
 }
 
-#navxDD{
-    width: 8.1rem !important; 
+#navxDD{ /*  De un ul, le asigno estas caracteristicas a estos elementos*/
+    width: 8.1rem !important; /* Tamaño fijo como su caja superior */
 }
 
-#navxD11{
-    width: 8.9rem !important; 
+#navxD11{ /* Al igual al menu desplegable */
+    width: 8.9rem !important; /* Le asigno estas caracteristicas */
 }
 
 #nav>ul>li:hover>ul {

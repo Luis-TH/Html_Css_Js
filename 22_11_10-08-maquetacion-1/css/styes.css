@@ -230,135 +230,126 @@ button:active {
     text-align: center; /* Que el texto este centrado */
 }
 
-#navxDD{ /*  De un ul, le asigno estas caracteristicas a estos elementos*/
-    width: 8.1rem !important; /* Tamaño fijo como su caja superior */
+#navxDD{ /* Nombre del elemento ul, solo le asigno tamaño a los elemento internos */
+    width: 8.1rem !important; /* Al menu desplegable le asigno el tamaño del elemento #navxD */
 }
 
-#navxD11{ /* Al igual al menu desplegable */
-    width: 8.9rem !important; /* Le asigno estas caracteristicas */
+#navxD11{ /* Tamaño del menu de donde se despliegan elementos */
+    width: 8.9rem !important; /* Tamaño igual a la caja superior de arriba llamada  */
 }
 
-#nav>ul>li:hover>ul {
-    display: block;
+#nav>ul>li:hover>ul { /* Son las barras desplegables #navxD1 */
+    display: block; /* Que se comporten como un bloque, para poder desplegar el elemento */
 }
 
-#nav>ul>li:hover>ul>li {
-    background-color: #F2F1F0;
-    border-bottom: 1px solid #D6D6D6;
-    padding: 8px;
-    line-height: 25px;
-    font-size: 13px;
-    transition: all 300ms;
+#nav>ul>li:hover>ul>li { /* En los enlaces desplegables */
+    background-color: #F2F1F0; /* Fondo de los enlaces sea blanco */
+    border-bottom: 1px solid #D6D6D6; /* Borde de elementos desplegables un poco grises */
+    padding: 8px; /* Espacio del teto hacia afuera de los elementos laterales */
+    line-height: 25px; /* Del top hacia abajo bajo el menu desplegable */
+    font-size: 13px; /* Tamaño del texto */
+    transition: all 300ms; /* Tiempo en el cual hago la transicion */
 }
 
 #nav>ul>li:hover>ul>li a {
-    color: #666666;
+    color: #666666; /* Color del texto de las etiquetas desplegables */
 }
 
-#nav>ul>li:hover>ul>li:hover {
-    box-shadow: 0px 7px 6px #666565 inset;
-    /* background: #cccccc; */
+#nav>ul>li:hover>ul>li:hover { /* Pasando el mouse al menu desplegable */
+    box-shadow: 0px 7px 6px #666565 inset; /* Sombrea, en el x0, y7, tamaño difuminado */
 }
-
 
 /* CONTENIDO */
-
-#content {
-    font-family: sans-serif, Arial, Heletica;
-    width: 1250px;
-    min-width: 1100px;
-    margin: 0px auto;
+#content { /* Es el recuadro donde viene en todo el contenido, con aside, formulario y demas, es el espacio total a ocupar */
+    font-family: sans-serif, Arial, Heletica; /* Tipografia al id=content */
+    width: 1250px; /* Anchura del elemento, donde va a ir todo el contenido colocado */
+    min-width: 1100px; /* Anchura minima que necesta para trabajar */
+    margin: 0 auto; /* Margen para poder centrar los elementos */
 }
-
 
 /* BARRA LATERAL */
-
-aside,
+aside, /* Va a la etiqueta aside, ambas del lado izquierdo, tambien va al elemento inferior */
 #frases {
-    width: 200px;
-    float: left;
-    margin: 30px;
-    background-color: white;
-    border: 1px solid #cccccc;
-    box-shadow: 0px 2px 2px #cccccc;
-    font-family: sans-serif, Arial, Helvetica;
+    width: 200px; /* Le asigno un tamaño */
+    float: left; /* Que sea un flotante a la izquierda para poderlo acomodar */
+    margin: 30px; /* Como es flotante le asignamos un tamaño para que quepa todo */
+    background-color: white; /* El color de fondo de este elemento va a ser blanco */
+    border: 1px solid #cccccc; /* Que el borde del eleento del lado izquierdo sea un poco gris */
+    box-shadow: 4px 4px 4px #cccccc; /* Es la sombra de la caja, del aside del lado izquierdo */
+    font-family: sans-serif, Arial, Helvetica; /* Es la tipografia del elemento */
 }
 
-#frases {
-    width: 180px;
-    padding: 10px;
-    font-size: 14px;
-    font-family: sans-serif;
+#frases { /* Al side infeior */
+    width: 170px; /* Redusco el tamaño del elemento */
+    padding: 10px; /* Del texto hacia afura el tamaño */
+    font-size: 14px; /* Tamaño de letra */
+    font-family: sans-serif; /* Tipogriafia de letra */
 }
 
-#aside .widget {
-    display: block;
-    width: 180px;
-    margin: 5px auto;
-    padding: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 14px;
-    border-bottom: 1px dashed #333333;
-    text-align: center;
+#aside .widget { /* Estilo en la barra superior izuierda */
+    display: block; /* Que este elemento se comporte como un bloque */
+    width: 180px; /* Anchura del aside superior izquierdo */
+    margin: 5px auto; /* Margen hacia abajo de cada elemenento y dejarlo centrado */
+    padding: 8px; /* Espacio entre los subtitulos h3 y los botones hacia el inicio/final del espacio */
+    padding-left: 10px; /* Espacio desde las letras izquierdas hacia la izquierda */
+    padding-right: 10px; /* Espacio de las letras derechas hacia la derecha */
+    font-size: 14px; /* Tamaño de texto */
+    border-bottom: 1px dashed #333333; /* El borde que tiene este elemento */
+    text-align: center; /* Alieamos el elemento a la mitad */
 }
 
-#aside .widget:last-child {
-    margin-bottom: 20px;
+#aside .widget:last-child { /* Al elemento inferior, osea al border-boton */
+    margin-bottom: 0.1px; /* Le voy a asignar un pequeño espacio hacia abajo */
 }
 
-#aside h3 {
-    display: block;
-    width: 100%;
-    color: #333333;
-    text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-bottom: 15px;
-    background: #f2f3f2;
-    border: 1px solid #cccccc;
-    border-left: none;
-    border-right: none;
+#aside h3 { /* Dentro de la barra superior izquierda, en el elemento h3 */
+    display: block; /* Que esto se comporte como un bloque */
+    width: 100%; /* Que ocupe el ancho de 100% */
+    color: #333333; /* Que el color del texto sea negro */
+    text-align: center; /* Que el texto se mantenga centrado */
+    padding-top: 2px; /* Del dondo del texto, se manrenga a la mitad mediante el padding rop */
+    padding-bottom: 2px; /* Donde se mantiene el texto, hacerlo un poquito mas grande hacia abajo */
+    margin-bottom: 15px; /* El espacio del h3(subtitulo hacia el label del usuario */
+    background: #f2f3f2; /* Donde esta lo de entrar a la web nivel superior este color un poco gris */
+    border: 1px solid #cccccc; /* Al borde del subtitulo, lo pongo un poco gris */
+    border-left: none; /* Sin borde lado izquierdo */
+    border-right: none; /* Sin borde lado derecho */
 }
 
-#aside li {
-    margin-top: 8px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    list-style: none;
+#aside li { /* En la barra superior izquierda, pero en el area de los enlaces */
+    margin-top: 8px; /* Margen hacia arriba de cada elemento */
+    margin-bottom: 5px; /* Margen inferior hacia abajo de cada elemento */
+    text-align: center; /* Centramos el texto de los enlaces */
+    list-style: none; /* Sin ningun tipo de estilo los enlaces */
 }
-
 
 /* FORMULARIOS BARRA LATERAL */
-
-#aside div label,
+#aside div label, /* A todos los elementos dentro del aside, con estas clases y tipos */
 #aside div input[type="text"],
 #aside div input[type="email"],
 #aside div input[type="password"],
 #aside div a {
-    display: block;
-    width: 95%;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    display: block; /* Que se comporten como bloques */
+    width: 95%; /* La anchura de los elementos */
+    margin-top: 2px; /* Distancia de los elementos hacia arriba */
+    margin-bottom: 2px; /* Distancia de los elementos hacia abajo */
 }
 
-#aside div input[type="button"],
+#aside div input[type="button"], /* Para los botones y submit */
 #aside div input[type="submit"],
 #aside div input {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 5px; /* Margen superior del boton */
+    margin-bottom: 10px; /* Margen inferior del boton */
 }
 
-#aside input,
+#aside input, /* Los elementos de escritura y etiquetas */
 #aside label {
-    margin: 0px auto;
-    text-align: center;
+    margin: 0px auto; /* A la mitad, los botones */
+    text-align: center; /* Texto centrado a la mitad */
 }
-
 
 /* SECCIONES */
-
-#sections {
+#sections { /* Lo que va en medio */
     float: right;
     width: 75%;
     font-family: sans-serif, Arial, Helvetica;

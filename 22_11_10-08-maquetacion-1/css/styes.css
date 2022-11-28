@@ -350,76 +350,74 @@ aside, /* Va a la etiqueta aside, ambas del lado izquierdo, tambien va al elemen
 
 /* SECCIONES */
 #sections { /* Lo que va en medio */
-    float: right;
-    width: 75%;
-    font-family: sans-serif, Arial, Helvetica;
-    margin-right: 20px;
+    float: right; /* Seccion de noticias es el de en medio, osea que ponrse a la izquierda */
+    width: 75%; /* Tamaño para no avanzar tener mas del 100 */
+    font-family: sans-serif, Arial, Helvetica; /* La tipografia */
+    margin-right: 20px; /* Espacio nre el primer secmento de izquierda a derecha el espacio entre ambos */
 }
 
-#sections .titulo {
-    font-family: fajala;
-    font-size: 24px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    text-align: center;
-    margin-top: -20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #cccccc;
+#sections .titulo { /* Titulo de hasta arriba en color negro */
+    font-family: fajala; /* Tipo de letra */
+    font-size: 24px; /* Tamaño del titulo */
+    font-weight: normal; /* La tipografia normal, sin bold ni nada */
+    letter-spacing: 1px; /* Espacio entre cada lera */
+    text-align: center; /* Centramos el texto en medio */
+    margin-top: -20px; /* Subimos poquito la seccion de noticias */
+    padding-top: 20px; /* Bajamos poquito mas la seccion de noticias */
+    padding-bottom: 10px; /* Espacio hacia abajo */
+    border-bottom: 1px solid #cccccc; /* El borde que esta abajo de la seccion de noticias */
 }
 
-#sections section {
-    margin-top: 40px;
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #cccccc;
-    box-shadow: 0px 0px 4px #c9c9c9;
-    color: #333333;
-    font-size: 16px;
-    overflow: hidden;
+#sections section { /* De la seccion de noticias, donde inicia en medio */
+    margin-top: 40px; /* Altura de arriba hacia abajo, */
+    background-color: white; /* Color de fondo blanco */
+    padding: 20px; /* Pading del titulo */
+    border: 1px solid #cccccc; /* Borde de la seccion de noticias, para hacerlo una caja */
+    box-shadow: 4px 4px 6px #c9c9c9; /* De la caja le damos un sombreado */
+    color: #333333; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto dentro de la caja */
+    overflow: hidden; /* Que no maneje ningun tipo de desplazamiento */
 }
 
-#sections .article {
-    margin: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+#sections .article { /* Es el texto, dentro de los articulos */
+    margin: 10px; /* Margenes desde fuera hacaia adentro */
+    margin-top: 20px; /* Espacio hacia a arriba de los articulos */
+    margin-bottom: 20px; /* Espacio hacia abajo de los articulos */
 }
 
-#sections .date {
-    color: gray;
-    font-size: 14px;
+#sections .date { /* Donde va la fecha */
+    color: gray; /* El color es gris */
+    font-size: 14px; /* Tamaño del texto */
 }
 
-#sections .stickerOne,
+#sections .stickerOne, /* En las etiquetas pegadas en los 3 elementos */
 .stickerTwo {
-    position: absolute;
-    margin-top: -38px;
-    z-index: 0;
+    position: absolute; /* Esta es la referencia de la posicion */
+    margin-top: -38px; /* Tamaño donde deben de ir, debido a la posicion absoluta y a repetir elementos */
+    z-index: 0; /* Que se muestren atras para verlas transparentes */
 }
 
-#sections .stickerTwo {
-    margin-left: 860px;
+#sections .stickerTwo { /* La segunda pegantina */
+    margin-left: 860px; /* Lugar donde se mantiene a la derecha */
 }
 
-#history {
-    float: right;
-    margin: 20px;
-    margin-right: 20px;
+#history { /* Nuevo div, antes limpiamos todo, es un hypervinculo */
+    float: right; /* Lo flotamos a la derecha */
+    margin-top: 20px; /* Margen que mantiene hacia arriba */
+    margin-right: 20px; /* Margen que mantiene de la derecha a la izquierda */
 }
-
 
 /* PIE DE PAGINA */
-
-#footer {
-    width: 100%;
-    margin-top: 0px auto;
-    text-align: center;
-    margin-top: 40px;
-    background-color: #333333;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    font-family: sans-serif;
-    font-size: 14px;
-    box-shadow: 0px 0px 2px gray;
+#footer { /* Al id footer */
+    width: 100%; /* Que tenga un ancho del 100% */
+    margin-top: 0px auto; /* Que se mantenga a la mitad el elemento */
+    text-align: center; /* El texto centrado */
+    margin-top: 40px; /* Margen de arriba hacia abajo, pero es el espacio lanco abajo del pie de pagina */
+    background-color: #333333; /* Color de fondo */
+    padding-top: 10px; /* De las letras hacia arriba espacio */
+    padding-bottom: 10px; /* De las letras hacia abajo, esacio */
+    color: white; /* El color de la duente */
+    font-family: sans-serif; /* La tipografia */
+    font-size: 14px; /* Tamaño de Texto */
+    box-shadow: 0px 0px 2px gray; /* Vamos a ponerlo sombreado */
 }

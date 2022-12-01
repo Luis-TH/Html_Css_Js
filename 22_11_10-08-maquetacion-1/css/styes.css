@@ -126,7 +126,7 @@ button:active {
 
 /* CABECERA */
 #header { /* A donde tengo el logotipo */
-    min-width: 1024px; /* Anchura del elemento maxima */
+    min-width: 1024px; /* Anchura del elemento minima */
     width: 100%; /* Anchura del 100% */
     height: 250px; /* Lo que mide de altura */
     margin: 0 auto; /* Sin margenes */
@@ -160,7 +160,8 @@ button:active {
     transition: all 300ms; /* El tiempo en el cual se hace la ransicion */
 }
 
-#header h1:hover { /* id=header, de los elementos h2. al pasarle el mouse */
+#header h1:hover { /* id=header, de los elementos h1. al pasarle el mouse */
+    /* Copie primero el difuminado, del text-shadow de arriba, con la "," le asigne lo que pasa con el hover */
     text-shadow: 0px 2px 1px #333333, 0px 0px 4px #70b231; /* Sombra derecha/abajo/arriba, color, sombra derecha/abajo/difuminado, color */
 }
 
@@ -173,7 +174,6 @@ button:active {
     width: 100%; /* Que la linea negra mida un 100% del ancho */
     height: 40px; /* Tamaño de la linea */
     background-color: #333333; /* Color de fondo negro */
-    /* color: white; */ /* Color blanco */
     font-family: sans-serif, Helvetica, Arial; /* Tipo de letra */
     font-size: 14px; /* Tamaño de la letra */
     box-shadow: 0px 0px 2px gray; /* Es el sombreado de la caja, es hacia afuera */

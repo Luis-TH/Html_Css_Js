@@ -48,7 +48,7 @@ a:hover { /* Cuando les pasemos el cursor cambien un poco de color */
     color: #285616; /* Color un poco mas verde/gris */
 }
 
-.red { /* Defino esta clase */
+.red { /* Defino esta clase, recuerda que se lee en cascada, por eso el important */
     color: #9b2422 !important;
 }
 

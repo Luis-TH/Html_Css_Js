@@ -1,0 +1,101 @@
+* { /* Obligado para dejar todo en 0 */
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix { /* La clase que me limpia los flotados */
+    float: none;
+    clear: both;
+}
+
+#container { /* identificador */
+    width: 70%; /* Lo que ocupa todo el contenido de la caja */
+    background: red; /* Asignamos un color rojo a la caja */
+    margin: 0px auto; /* Quiero centrar el elemento */
+    font-family: Arial, Helvetica, sans-serif; /* Tipografia asignada */
+    margin-top: 40px; /* Espacio superior desde el topa del container hasta abajo */
+    margin-bottom: 40px; /* Margen asignado hacia abajo */
+}
+
+header { /* elemento header */
+    width: 100%; /* El 100% del tamaño del container, id superior */
+    height: 150px; /* La altura de este elemento */
+    background: lightblue; /* El color de fondo */
+    color: #333; /* Color de la letra */
+    line-height: 150px; /* Tamaño asignado del texto de donde empieza el header hacia abajo, acomodo texto */
+    text-align: center; /* Texto centrado */
+}
+
+aside { /* Elemento aside, que es la barra lateral */
+    width: 25%; /* Tamaño asignado barra izquierda */
+    min-height: 700px; /* Tamaño de la barra izquierda, es lo minimo */
+    float: left; /* Que se flote a la izquierda */
+    background: #ccc; /* Un fondo gris bajito */
+    text-align: center; /* Texto centrado */
+    line-height: 700px; /* El texto queda en medio de altura */
+}
+
+#articles { /* Tomo el id de article */
+    width: 75%; /* Le asigno este tamaño, porque del aside le defini el 25 */
+    min-height: 700px; /* Vuelvo a asignar la altura minima del elemento de enmedio */
+    float: left; /* Lo floto a la izquierda para que quede pegado al aside */
+    background-color: lemonchiffon; /* Color de fondo */
+}
+
+#articles article { /* Dentro del id-article, me voy a los elementos a definirlos */
+    width: 25%; /* Anchura de los elementos verdes */
+    height: 150px; /* Altura de los elementos verdes */
+    background: green; /* Fondo de pantalla */
+    color: white; /* Color del texto blanco */
+    line-height: 150px; /* Altura del texto, como tomarlo de arriba a abajo el texto */
+    text-align: center; /* Texto centrado */
+    border: 5px solid blue; /* Que tengan un borde cada elemento azul */
+    float: left; /* Que se floten a la derecha */
+    margin: 14% 3.5% auto /* Espacio hacia afuera, altura, angostura y centrado */
+}
+
+footer{ 
+    text-align: center; /* Pie de Pagina Centrado */
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 888px) { /* Desde la anchura 0px hasta la anchura 88px de pantalla */
+    /* Se ejecutaran estos estilos */
+    #articles article {
+        width: 40%; /* Anchura de los articulos */
+        background: red; /* Cambia el color de fondo a rojo */
+    }
+}
+
+@media (max-width: 632px) { /* Hasta esta anchura */
+    /* Se ejecutaran estos estilos */
+    #container { 
+        overflow: hidden; /* Desaparecen las donde estan los elementos */
+    }
+    #articles { 
+        width: 100%; /* Los recuadros se vuelven ccompletos */
+    }
+    /* Se ejecuan ests estilos */
+    aside {
+        float: none; /* No flota nada hacia ningun lado */
+        min-height: auto; /* No hay tamaño minimo */
+        line-height: 20px; /* Texto de arriba hacia abajo */
+        width: 91%; /* Anchura del elemento de la barra lateral */
+        padding: 19px; /* Espacio exterior */
+    }
+    #articles article {
+        width: 90%; /* Lo que miden los articles */
+        background: blue; /* Se vuelven color azul */
+    }
+}
+
+@media (max-width: 554px) {
+    /* Se ejecuan ests estilos */
+    body {
+        background: lightsalmon; /* El dondo se vuelve color rosita */
+    }
+    header{
+        height: 10%; /* La cabecera para que quepa el texto */
+    }
+}

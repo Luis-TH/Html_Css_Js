@@ -22,8 +22,16 @@ a { /* A los hypervinculos */
     text-decoration: none; /* Para quitarle el subrayado de los elementos */
 }
 
+footer{
+    text-align: center;
+    min-height: auto;
+    background-color: black;
+    color: white;
+}
+
 footer a { /* El hypervinculo de abajo en color rojo, solo el hypervinculo */
     color: blue; /* Color del texto */
+    line-height: 30px;
 }
 
 /* Selector de ID */

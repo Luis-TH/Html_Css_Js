@@ -32,3 +32,15 @@ p { /* Estilos en el Parrafo */
     font-size: 18px; /* Tamaño del Texto */
     font-weight: bold; /* Que este en Negritas */
 }
+footer{
+    text-align: center;
+    min-height: auto;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+footer a { /* El hypervinculo de abajo en color rojo, solo el hypervinculo */
+    color: blue; /* Color del texto */
+    line-height: 30px;
+}

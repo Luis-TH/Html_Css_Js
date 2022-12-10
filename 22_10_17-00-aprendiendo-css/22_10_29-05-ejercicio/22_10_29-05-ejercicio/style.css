@@ -1,0 +1,175 @@
+/* 
+Ejercicio completo con HTML y CSS
+1. Crear un documento HTML y vincularlo con un CSS
+2. Crear una estructura HTML que cuente con un CONTENEDOR GENERAL, CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL,
+ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL Y FOOTER.
+3. Todo el contenido debe estar dentro del cotenedor general y su ancho sera de 1200px y estar centrado
+4. Header debe ocupar el 100% del ancho y tener un texto grande centrado.
+5. Menu debe tener los elementos uno al lado del otro
+6. El contenido principal debe tener un anco de 70%
+7. El contenido dentro del contenedor principal debe ser una cuadricula con 4 lineas de 2 cajas
+8. La barra lateral debe tener un ancho de 30px
+9. El footer debe tener un ancho de 100% del div que lo contiene y estar abajo del todo
+*/
+
+*{ /* Para todo el documento */
+    margin: 0; /* Anula todos los margenes */
+    padding: 0; /* Anula los paddings */
+    text-decoration: none; /* Que no tenga ningun texto decorado */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Tipografia del texto */
+}
+
+#general{ /* Es todo el documento HTML */
+    width: 1200px; /* Espacio del elemento, con el margin lo centramos */
+    margin: 0 auto; /* Margenes que sean de 0 y luego automatico para centrarlo */
+    margin-top: 20px; /* Margen superior */
+    border: 1px solid gray; /* Todo el texto HTML le asigne un borde */
+}
+
+#header{
+    width: 100%; /* Que el Titulo este al 100% de la caja general */
+    height: 100px; /* Le asigno una mayor altura, pero solo al titulo */
+    background-color: blue; /* Le asigamos un tamaño y une espacio, asi que asi se muestra el color */
+    color: white; /* Letras color blanco */
+    text-align: center; /* Texto centrado a la mitad */
+    line-height: 90px; /* Bajamos el subtitulo, de arriba a abajo y queda la mitad */
+}
+
+.clearfix{ /* Clase que limpia todo */
+    float: none; /* Que no haya elementos flotantes */
+    clear: both; /* Limpiamos todo */
+}
+
+#menu{ /* Donde va la barra de navegacion */
+    background: rgb(204, 201, 201); /* Fondo gris */
+    padding-left: 33.3%;
+}
+
+#menu>ul>li{ /* Son los elementosde la barra de navegacion, los links */
+    /* display: inline-block; /* Es lo mismo que display block y float left */
+    display: block; /* Para que cada uno se comporte como un bloque */
+    float: left; /* Los hago elementos flotantes y se quedan a la izquierda, unica linea */
+    padding: 5px; /* Un espacio entre cada elemento */
+    border-left: 1px solid rgb(148, 142, 142); /* Borde lateral de izquierdo, es una division */
+}
+
+#border-right{ /* Le asigno un nombre al ultimo elemento de la barra de navegacion y le pongo un borde al final */
+    border-right: 1px solid rgb(148, 142, 142); /* Borde lateral de derecho, es una division, ultimo elemento */
+}
+
+#menu>ul>li>a{ /* Directamente a los hypervinculos */
+    display: block; /* Para que se comporten como bloques */
+    padding: 10px; /* Un mañor tamaño a cada hipervinculo, lo crecemos de adentro hacia afuera */
+    color: rgb(51, 51, 51); /* Los hago un color similar al negro, las letras del hypervinculo, de azul a negro */
+}
+
+#menu>ul>li:hover{ /* Al pasarle el mouse, por la caja */
+    background: blue; /* Al pasarle el boton se convierten en color azul */
+    cursor: pointer; /* Que se convierta en una manita al pasarle el cursor */
+}
+
+#menu>ul>li:hover>a{ /* Al pasarle el boton a las letras del hypervinculo, observa el hover, no esta al final */
+    color: white /* Cuando paso el mouse, cambian de color a blanca las letras */
+}
+
+#contenido{ /* Esto va para el section, lo floto a la izquierda, con todo y titulo */
+    float: left; /* Lo floto a la izquierda, para que ese sea su espacio */
+    width: 69.90%; /* Esto es lo que va a medir el section, desde el h1, hasta los div de cajas, deja espacio derecho */
+}
+
+#lateral{ /* Aside, lo que va abajo, pero lo voy a poner a la derecha */
+    float: left; /* Lo floto a la izquierda, para poderlo poner alado del otro #contenido flotado a la izquierda */
+    width: 29.90%; /* Para que ocupe el 99.9 del ancho a la izquierda y dejarlo asi */
+    border: 1px solid red; /* Le asigno un estilo de caja al aside */
+    min-height: 500px; /* Que esto sea el tamaño minimo a lo largo */
+    max-height: 659px; /* Tamaño maximo a lo largo que puede medir */
+    text-align: center; /* Pongo el texto centrado */
+    overflow-y: scroll; /* Para que a lo largo se pueda bajar */
+}
+
+h2{
+    padding-bottom: 10px; /* Espacio de este elemento de abajo hacia afuera */
+}
+
+#contenido>h1{ /* Donde dice Cajas de Contenido Principal */
+    text-align: center; /* Centramos el texto */
+    border-bottom: 1px solid whitesmoke; /* Al h1, le pusimos un borde muy discreto */
+    padding: 15px; /* Le damos un tamaño, de dentro hacia afuera del h1 */
+    color: rgb(92, 92, 92); /* El color es un negro un poco gris del h1 */
+    text-shadow: 0 0 2px black; /* Le pongo sombra al h1 (eje x, eje y, y difuminado)*/
+}
+
+#contenido .caja{ /* Estilos para section contenido y la clase caja */
+    position: relative; /* Que tome el espacio de este elemento */
+    width: 40%; /* Tamaño que va a tomar cada caja, a lo ancho */
+    height: 240px; /* Largo de cada elemento, caja */
+    background: #ccc; /* Color gris para cada elemento */
+    border: 1px solid gray; /* El borde de cada caja */
+    color: #444; /* Color gris del texto */
+    float: left; /* Todo va a flotar a la izquierda para que tome el tamaño del contenido y tamaño caja */
+    margin: 4%; /* Espacio entre cada elemento */
+    margin-left: 40px; /* Margen hacia la izquierda al iniciar */
+    text-align: center; /* Texto centrado */
+    line-height: 200px; /* Espacio hacia arriba del texto */
+    text-transform: uppercase; /* Que el texto este en mayusculas */
+    box-shadow: 10px 5px 20px gray; /* Sombra a las cajas, eje x, eje y y difuminado */
+    border-radius: 50px 10px 4px 61px; /* Estilos a las cajas en las esquinas der/izq/abj-izq/abj-der */
+}
+
+.sombra-inferior{ /* Le asigno unos estilos a la caja 2 */
+    box-shadow: 5px 5px 5px gray inset !important; /* Modificacion de las cajas pares, inset=sombra por dentro */
+}
+
+.sombra-inferior-par{ /* Le asigno unos estilos a la caja 2 */
+    box-shadow: -5px -5px 5px  gray inset !important; /* Modificacion de las cajas pares */
+}
+
+.caja-par{
+    border-radius: 10px 50px 61px 4px !important; /* Estilos a las cajas en las esquinas izq der abj/der abj/izq */
+}
+
+footer{ /* Color Rojo para elemento, para el elemento HTML footer */
+    width: 100%; /* Anchura de general, lo que ocupa */
+    height: 100%; /* Lo que mide el campo de altura, osea quedo mas en medio el texto del footer */
+    line-height: 25px; /* Bajo un poco mas el texto, linea de arriba hacia abajo(invisible) */
+    background: gray; /* Fondo color gris */
+    text-align: center; /* Texto centrado */
+    color: rgb(36, 34, 34); /* Color de texto un poco mas gris y menos negro */
+    border-top: 1px solid whitesmoke; /* La linea del borde */
+}
+
+.libre{ /* Estilo a las 2 cajas */
+    position: absolute; /* Para que se puedan desplazar en el elemento */
+    top: 170px; /* Desplazamiento hacia abajo de esta clase */
+    left: 58%; /* Movimiento de izquierda hacia derecha */
+    border: 1px solid black; /* Les doy un borde */
+    background-color: red; /* Color de fondo a las cajas */
+    color: whitesmoke; /* Color de texto blanco */
+    width: 60px; /* Anchura del elemento */
+    height: 60px; /* Altura del elemento */
+    font-size: 13px; /* Tamaño del texto */
+}
+
+.libre1{ /* Son libres en todo el documento */
+    z-index: 101; /* Que la caja libre se muestre atras(mas alto se muestra primero) */
+}
+
+.libre2{ /* Libre en todo el documento */
+    background-color: green; /* Color de la caja #2 */
+    top: 170px; /* La ponemos un poco mas arriba */
+    left: 59.5%; /* Mas de la izquierda a la derecha */
+    z-index: 102; /* Que se quede adelante */
+}
+
+.fija{ /* Esta ya esta fuera de todos los margenes, empieza desde 0 en el elemento HTML */
+    position: fixed; /* Para que no se pueda mover */
+    top: 21.5%; /* De arriba hacia abajo, posicion */
+    border: 1px solid black; /* Le pongo un borde */
+    background-color: brown; /* Color de fondo azul */
+    color: white; /* Color de las letras blanco */
+    width: 17.7%; /* Anchura del elemento (pagina completa) */
+    height: 50px; /* Tamaño de la linea */
+    font-size: 13px; /* Tamaño del texto */
+    text-align: center; /* Texto centrado */
+    line-height: 45px; /* Linea de arriba hacia abajo, para el texto */
+}

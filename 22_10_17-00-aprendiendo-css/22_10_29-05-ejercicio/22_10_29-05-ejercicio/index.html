@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio HTML y CSS</title> <!-- Titulo en la pestaña -->
+    <link rel="stylesheet" href="style.css"> <!-- Link a los estilos CSS -->
+</head>
+<body>
+    <div id="general"> <!-- Div que va a contener todo -->
+        <header id="header"> <!-- Esto es la cabecera -->
+            <h1>Ejercicio HTML con CSS</h1> <!-- Titulo en la Cabecera -->
+        </header>
+        <nav id="menu"> <!-- Se coloca una barra de avegacion -->
+            <ul> <!-- Una lista desordenada -->
+                <li><a href="#">Inicio</a></li> <!-- Un elemento de lista, con un hypervinculo -->
+                <li><a href="#">Articulos</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li id="border-right"><a href="#">Contacto</a></li>
+            </ul>
+            <div class="clearfix"></div> <!-- Para limpiar todos los elementos flotantes -->
+        </nav>
+        <section id="contenido"> <!-- Una seccion donde va el contenido de la pagina -->
+            <h1>Cajas del Contenido Principal</h1> <!-- Titulo en el section -->
+            <div class="caja"> <!-- Una div que va a ser una caja -->
+                <h2>Caja #1</h2> <!-- Un subtitulo -->
+            </div>
+            <div class="caja caja-par"> <!-- Una clase con otra clase inmersa -->
+                <h2>Caja #2</h2>
+            </div>
+            <div class="caja sombra-inferior">
+                <h2>Caja #3</h2>
+            </div>
+            <div class="caja sombra-inferior caja-par sombra-inferior-par">
+                <h2>Caja #4</h2>
+            </div>
+            <div class="caja">
+                <h2>Caja #5</h2>
+            </div>
+            <div class="caja caja-par">
+                <h2>Caja #6</h2>
+            </div>
+            <div class="caja sombra-inferior">
+                <h2>Caja #7</h2>
+            </div>
+            <div class="caja sombra-inferior caja-par sombra-inferior-par">
+                <h2>Caja #8</h2>
+            </div>
+        </section>
+
+        <aside id="lateral"> <!-- Una barra lateral -->
+            <div class="caja"> <!-- Una div que igual ba a ser una caja -->
+                <h2>Elementos de la Barra Lateral</h2> <!-- Un subtitulo -->
+                <p> <!-- Un parrafo -->
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum! Soluta, sunt.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt amet ad, ut accusamus fuga optio 
+                    dolor mollitia sequi accusantium officiis molestiae harum commodi soluta expedita reiciendis illum!
+                </p>
+            </div>
+        </aside>
+
+        <div class="clearfix"></div> <!-- Para limpiar los elementos flotantes -->
+
+        <footer id="footer"> <!-- Pie de pagina, con &copy le ponemos un copyright -->
+            Todos los derechos reservados <br/> &copy; Luis Raymond Trujillo Hunt
+            <br/>
+            <a href="https://github.com/Luis-TH/Html_Css_Js/tree/main/22_10_17-00-aprendiendo-css/22_10_29-05-ejercicio">Codigo Fuente</a>
+        </footer>
+    </div>
+
+    <div class="libre libre1">
+        Soy la caja libre #1
+    </div>
+    <div class="libre libre2">
+        Soy la caja libre #2
+    </div>
+    <div class="fija">
+        Soy un Texto Libre Fijo
+    </div>
+
+</body>
+</html>

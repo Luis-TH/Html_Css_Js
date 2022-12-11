@@ -34,3 +34,10 @@ h2 { /* Para todos los h2 */
     text-align: justify; /* El texto esta justificado, osea los espacios, del dubtitulo menor */
     height: 300px; /* Mas grande el tamaño del fondo de pantalla, mas largo */
 }
+
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}

@@ -11,11 +11,13 @@ h1 { /* Elemento del Htmls */
     max-width: 1035px; /* Anchura del elemento */
     text-align: center; /* El texto dentro se centre */
     line-height: 50px; /* Espacio hacia abajo del titulo */
+    margin: 0 auto;
 }
 
 #cajas { /* Esto es el section */
     max-width: 1050px; /* Tamaño maximo del ancho de la seccion, dentro puse las cajas */
     border: 1px solid black; /* Esto es el borde de la section */
+    margin: 0 auto;
 }
 
 .caja {
@@ -51,10 +53,20 @@ h2{ /* Elemento html */
     max-width: 1035px; /* Tamaño maximo del elemento */
     text-align: center; /* Que el texto se centre */
     margin-top: 10px; /* Margen superior */
+    margin: 0 auto;
 }
 
 #footer-p{ /* id del elemento html */
     max-width: 1035px; /* Tamaño maximo del elemento */
     margin-top: 10px; /* Margen superior */
     text-align: center; /* Texto centrado */
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 25px;
 }

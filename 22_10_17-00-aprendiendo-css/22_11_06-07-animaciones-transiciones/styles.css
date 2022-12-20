@@ -60,3 +60,16 @@ h1{
         transform: rotate(0deg); /* El elemento ya no rota */
     }
 }
+
+#footer{
+    margin-top: 20px;
+}
+
+footer{ /* Color Rojo para elemento, para el elemento HTML footer */
+    width: 100%; /* Anchura de general, lo que ocupa */
+    height: 100%; /* Lo que mide el campo de altura, osea quedo mas en medio el texto del footer */
+    line-height: 25px; /* Bajo un poco mas el texto, linea de arriba hacia abajo(invisible) */
+    background: gray; /* Fondo color gris */
+    text-align: center; /* Texto centrado */
+    color: rgb(36, 34, 34); /* Color de texto un poco mas gris y menos negro */
+}

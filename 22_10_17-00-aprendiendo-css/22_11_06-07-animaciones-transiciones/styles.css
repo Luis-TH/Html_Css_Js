@@ -25,6 +25,7 @@ h1{
 
 #caja { /* Estilos al id caja */
     margin-top: 25px; /* Margen superior */
+    position: fixed;
     width: 250px; /* Anchura del elemento */
     height: 250px; /* Altura del elemento */
     background: lightseagreen; /* Su color de fondo */
@@ -45,7 +46,7 @@ h1{
         transform: rotate(0deg); /* Que el elemento no rote nada */
     }
     50% { /* Cuando la animacion llegue al 50% */
-        margin-left: 1600px; /* Que el margen de la izquierda a la derecha sea de tantos pixeles */
+        margin-left: 83%; /* Que el margen de la izquierda a la derecha sea de tantos pixeles */
         transform: rotate(360deg); /* Que el elemento rote 360 grados (osea completo) */
         border-radius: 999%; /* Que el borde sea del elemento sea total, convertirlo en circulo */
     }
@@ -62,7 +63,7 @@ h1{
 }
 
 #footer{
-    margin-top: 20px;
+    margin-top: 20rem;
 }
 
 footer{ /* Color Rojo para elemento, para el elemento HTML footer */
@@ -72,4 +73,5 @@ footer{ /* Color Rojo para elemento, para el elemento HTML footer */
     background: gray; /* Fondo color gris */
     text-align: center; /* Texto centrado */
     color: rgb(36, 34, 34); /* Color de texto un poco mas gris y menos negro */
+    position: relative;
 }
